@@ -1,0 +1,41 @@
+<mat-nav-list>
+
+
+  <a mat-list-item (click)='onClose()' routerLink='/'>
+    <mat-icon>home</mat-icon>Home
+  </a>
+
+  <div matLine>
+    <div mat-subheader>Main Categories</div>
+    <a mat-list-item>
+      <div matLine>
+        Main Category 1
+      </div>
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </a>
+    <a mat-list-item>
+      <div matLine>
+        Main Category 2
+      </div>
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </a>
+  </div>
+
+
+  <div matLine>
+    <a mat-list-item>
+      <mat-icon>keyboard_arrow_left</mat-icon>
+    </a>
+    <div mat-subheader>Main Category 1</div>
+    <a mat-list-item (click)='onClose()'>
+      <div matLine>
+        Category 1
+      </div>
+    </a>
+    <a mat-list-item (click)='onClose()'>
+      <div matLine>
+        Category 2
+      </div>
+    </a>
+  </div>
+</mat-nav-list>

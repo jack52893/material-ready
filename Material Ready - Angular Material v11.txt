@@ -1,0 +1,38 @@
+
+<h1 class='material-ready-title'>Material Ready - Start Your Next Project With Angular Material Installed</h1>
+
+<a class='material-ready-link' href='https://material-ready.netlify.app'>Live Demo</a>
+
+<div class='material-ready-container'>
+<div class='material-ready-item'>Angular Material Starter Project.</div>
+<div class='material-ready-item'>Start your next project with Angular Material installed.</div>
+<div class='material-ready-item'>Fully responsive with all resolutions. Five MediaQuery breakpoints that work with all resolutions.</div>
+<div class='material-ready-item'>Defined custom theme. Define the palettes for your theme.</div>
+<div class='material-ready-item'>Start now with latest Angular Version.</div>
+<div style="height:50px; width: 100%;"></div>
+<div class='material-ready-item material-ready-version'>Angular v11</div>
+<div class='material-ready-item material-ready-version'>Angular Material v11</div>
+</div>
+<style>
+  .material-ready-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+  .material-ready-item {
+    margin-left: 10px;
+    width: 100%;
+  }
+  .material-ready-version {
+    color: purple;
+  }
+</style>
+
+
+
+
+
+
+

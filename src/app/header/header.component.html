@@ -1,0 +1,34 @@
+<mat-toolbar color='primary'>
+  <mat-toolbar-row>
+    <div class="container">
+      <div class='menu'>
+        <button mat-icon-button (click)='onToggle()' *ngIf="breakpoint === 'xsmall'">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <div><button class='title' routerLink="/" type="button" mat-button>Material Ready</button></div>
+      </div>
+      <div class="items">
+        <form class='form' [formGroup]='form' (ngSubmit)='onSubmit()' *ngIf="breakpoint !== 'xsmall'">
+          <input type='text' class='search' (input)='onInput($event.target.value)' placeholder="Search"
+             formControlName='search'>
+          <mat-icon class='icon'>search</mat-icon>
+        </form>
+        <button type="button" mat-icon-button>
+          <mat-icon>shopping_cart</mat-icon>
+        </button>
+        <button type="button" mat-icon-button>
+          <mat-icon>account_circle</mat-icon>
+        </button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+  <mat-toolbar-row *ngIf="breakpoint === 'xsmall'">
+    <div class='section'>
+      <form class='form' [formGroup]='form' (ngSubmit)='onSubmit()'>
+        <input type='text' class='search' (input)='onInput($event.target.value)' placeholder="Search"
+          formControlName='search'>
+        <mat-icon class='icon'>search</mat-icon>
+      </form>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
